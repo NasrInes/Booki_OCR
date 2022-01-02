@@ -1,0 +1,354 @@
+@media screen and (max-width: 768px) {
+    header {
+        margin: 0;
+        padding: 0;
+        max-width: 768px;
+    }   
+    main {
+        padding: 0;
+        margin: 0;
+        max-width: 768px;
+    }
+    /*Caractéristiques du texte*/ 
+    .titles {
+        font-size: 30px;
+        width: 95%;
+        line-height: 45px;
+    }
+    
+    h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 23px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 20px;
+    }
+    .fa-star {
+        font-size: 16px;
+    }
+    /*PARTIE HEADER*/
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .logo-header {
+        flex-basis: 100%; 
+        text-align: center;
+    }
+    /*Barre de navigation*/
+    #logo {
+        width: 150px;
+        position: relative;
+        left: 35px;
+    }
+    nav {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+
+    }
+    .ul-items {
+        margin: 0;
+        flex-basis: 100%;
+        text-align: center;
+        font-size: 24px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-items {
+        padding: 30px 0px;
+        margin-left: 0;
+        flex-basis: 50%;
+    }
+    .li-items-hosting {
+        border-bottom: 4px solid #0065FC;
+    }
+    .li-items-activities {
+        border-bottom: 4px solid #F2F2F2;
+    }
+    .li-items-activities:hover  {
+        border-bottom: 4px solid #0065FC;
+        transition: 0.3s;
+    }
+    .a-nav-items:hover nav::before{
+        width: 50%;
+        content: "";
+        background-color: #F2F2F2;;
+        width: 100%;
+        left: 0;
+        height: 4px;
+    }
+    #hosting-nav-item {
+        color: #0065FC;
+    }
+    #hosting-nav-item::before {
+        width: 0;
+        height: 0;
+        transition: none;
+    }
+    #activities-nav-item:hover::before {
+        transition: 0;
+        width: 0%;
+        height: 0%;
+    }
+    /*Texte d'introduction*/ 
+    .text-introduction {
+        margin: 0px 35px 50px 35px;
+        margin-bottom: 50px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    /*FIN PARTIE HEADER*/
+    /*PARTIE MAIN*/
+    /*Barre de recherche*/
+    .search-bar {
+        display: flex;
+        justify-content: left;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    .button-map {
+        padding: 28px 40px;
+        font-size: 25px;
+        flex-basis: 10%;
+        
+    }
+    .text-area {
+        flex-basis: 75%;
+    }
+    .text-area::placeholder {
+        font-size: 25px;
+    }
+    .search-button {
+        display: none;
+    }
+    .phone-search-button {
+        flex-basis: 10%;
+        display: inline-block;
+        border: none;
+        font-size: 25px;
+        padding: 26px 30px;
+        border-radius: 20px;
+        text-align: center;
+        color: white;
+        background-color: #0065FC;
+        cursor: pointer;
+        position: absolute;
+        right: 5%;
+    }
+    .fa-map-marker-alt {
+        position: relative;
+        right: 8px;
+    }
+    /*Section comportant les différents filtres*/
+    .filter-section {
+        width: 90%;
+        flex-wrap: wrap;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    .filter-title {
+        flex-basis: 100%;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .filter h4 {
+        position: relative;
+        right: 8px;
+        margin: 0px 10px 0px 12px;
+    }
+    .filter-icon {
+        height: 63px;
+        width: 63px;
+        font-size: 25px;
+        right: 10px;
+    }
+    /*Section informations sur le nombre d'hébergements dispônibles*/
+    .info-text {
+        display: flex;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    .fa-info {
+        width: 18px;
+        height: 15px;
+        font-size: 18px;
+    }
+    /*Container de "Hébergements à Marseille" et "Les plus populaires"*/
+    /*Section "Hébergements à Marseille*/
+    .place-marseille {
+        padding: 50px 0px 40px 0px;
+        flex-basis: 100%;
+        order: 2;
+        margin: 0px 35px 0px 35px;
+        background-color: white;
+    }
+    
+    .section-cards-hosting {
+        height: 92%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .place-card {
+        height: 250px;
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .text-place-card {
+        height: 50%;
+    }
+    .text-place-card p {
+        font-size: 18px;
+    }
+    
+    /*Section "Les plus populaires"*/
+    .most-famous {
+        flex-basis: 100%;
+        order: 1;
+        margin-left: 0;
+        border-radius: 0;
+        padding: 10px 35px 0px 35px;
+        height: 850px;
+    }
+    .most-famous-cards {
+        height: 200px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    .title-most-famous-cards {
+        font-size: 20px;
+    }
+    .text-most-famous-cards p {
+        font-size: 18px;
+    }
+    
+    /*Section "Activités à Marseille"*/
+    .activities-marseille {
+        margin: 0 35px;
+    }
+    
+    .activities-card {
+        flex-basis: 100%;
+        margin-bottom: 40px;
+        height: 250px;
+    }
+    .activities-column {
+        flex-wrap: nowrap;
+        flex-basis: 200%;
+        height: 580px;
+    }
+    #fort-de-pomegues,#iles-du-frioul, 
+    #notre-dame-de-la-garde, #parc-longchamp {
+        flex-basis: 50%;
+        width: 100%;
+    }
+    .activities-img {
+        flex: 1;
+    }
+    .activities-title {
+        flex-basis: 70px;
+        padding: 0px 25px;
+        display: flex;
+        align-items: center;
+    }
+    .activities-title h3 {
+        font-size: 20px;
+    }
+    /*PARTIE FOOTER */
+    .footer-container {
+        margin-left: 35px;
+        flex-wrap: wrap;
+    }
+    .items-footer {
+        flex-basis: 100%;
+    }
+    #assistance-footer {
+        flex-basis: 100%;
+    }
+}
+@media screen and (min-width:375px) and (max-width: 460px) {
+    p {
+        font-size: 18px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    /*PARTIE HEADER*/
+    .titles {
+        font-size: 26px;
+        line-height: 35px;
+    }
+    /*Barre de navigation*/
+    nav {
+        flex-basis: 100%;
+    }
+    nav::before {
+        top: 180px;
+    }
+    .ul-items {
+        font-size: 20px;
+    }
+    .text-introduction {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    /*FIN PARTIE HEADER*/
+    /*PARTIE MAIN*/
+    /*Barre de recherche*/
+    .search-bar {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .button-map {
+        padding: 20px 35px;
+        font-size: 20px;
+    }
+    .text-area {
+        flex-basis: 60%;
+    }
+    .text-area::placeholder {
+        font-size: 18px;
+    }
+    .phone-search-button {
+        padding: 20px 25px;
+        font-size: 20px;
+        right: 8%;
+    }
+    /*Section comportant les différents filtres*/
+    .filter-section {
+        margin: 15px 25px 0px 25px;
+    }
+    .filter-title {
+        font-size: 25px;
+    }
+    .filter-icon {
+        height: 55px;
+        width: 55px;
+        font-size: 22px;
+    }
+    /*Section informations sur le nombre d'hébergements dispônibles*/
+    .info-text {
+        position: relative;
+        right: 8px;
+        margin: 0px 25px 0px 25px;
+    }
+    /*Container de "Hébergements à Marseille" et "Les plus populaires"*/
+    /*Section "Hébergements à Marseille*/
+    .text-place-card p {
+        font-size: 16px;
+    }
+    /*Section "Les plus populaires"*/
+    .text-most-famous-cards p {
+        font-size: 16px;
+    }
+    .text-most-famous-cards {
+        padding-right: 0px;
+    }
+}

@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="/CSS/style.css">
     <link rel="stylesheet" href="/CSS/normalize.css">
     <link rel="stylesheet" href="/CSS/tablette.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/CSS/mobile.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/88a9279dfc.js" crossorigin="anonymous"></script>
     <title>Booki</title>
@@ -18,31 +16,39 @@
 <body>
     <!--PARTIE HEADER-->
     <header>
-        <a href="">
+        <!--LOGO-->
+        <a class="logo-header" href="">
             <img id="logo" alt="logo-Booki" src="/images/logo/Booki.png">
         </a>
         <!--Barre de navigation : Hébergement Activités-->
         <nav>
             <ul class="ul-items">
-                <li class="nav-items"><a class="active-items" href="#hosting">Hébergements</a></li>
-                <li class="nav-items"><a class="active-items" href="#activities">Activités</a></li>
+                <li class="nav-items li-items-hosting"><a class="a-nav-items" id="hosting-nav-item" href="#hosting">Hébergements</a></li>
+                <li class="nav-items li-items-activities"><a class="a-nav-items" id="activities-nav-item" href="#activities">Activités</a></li>
             </ul>
         </nav>
     </header>
     <!--FIN PARTIE HEADER-->
     <!--PARTIE MAIN-->
     <main>
+        <!--Texte d'introduction-->
         <div class="text-introduction">
             <h1 class="titles"> Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
         </div>
-        <!--Barre de recherche-->
+        <!--Barre de recherche / formulaire-->
         <form class="search-bar" method="POST" action="/">
+            <!--Bouton avec icon map-->
             <button class="button-map" type="button" >
                 <i class="fas fa-map-marker-alt"></i>
             </button>
+            <!--Espace recherche avec champs de saisie-->
             <input class="text-area" type="text" placeholder="Marseille, France">
+            <!--Bouton "rechercher"-->
             <input class="search-button" type="submit" value="Rechercher">
+            <button class="phone-search-button" type="button" >
+                <i class="fas fa-search"></i> 
+            </button>
         </form>
         <!--Section comportant les différents filtres-->
         <div class="filter-section">
@@ -78,18 +84,24 @@
         </div>
         <!--Partie informations sur le nombre des logements disponibles-->
         <div class="info-text">
-            <p><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+            <i class="fas fa-info"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
-        <!--Section "Hébergement à Marseille"-->
+        <!--Section comportant "Hébergement à Marseille" et "Les Plus Populaires"-->
         <section class="place-section">
+            <!--Section "Hébergement à Marseille"-->
             <div class="place-marseille" id="hosting">
+                <!--Titre de la section-->
                 <h2> Hébergements à Marseille</h2>
-                <!--Première card : Auberge La Cannebière-->
+                <!--Partie comportant les cards-->
                 <div class="section-cards-hosting">
+                    <!--Première card : Auberge La Cannebière-->
                     <a href="" class="place-card">
+                        <!--Image-->
                         <div class="image-place-card">
-                            <img src="/images/hebergements/4_small/1.jpg" alt="auberge-la-cannebiere">
+                            <img src="/images/hebergements/3_medium/1.jpg" alt="auberge-la-cannebiere">
                         </div>
+                        <!--Description-->
                         <div class="description-place-card">
                             <div class="text-place-card">
                                 <h3>Auberge La Cannebière</h3>
@@ -102,14 +114,15 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star grey-star"></i>
                             </div>
-                            
                         </div>  
                     </a>
                     <!--Deuxième card : Hôtel du port-->
                     <a href="" class="place-card">
+                        <!--Image-->
                         <div class="image-place-card">
-                            <img src="/images/hebergements/4_small/2.jpg" alt="Hotel-du-port">
+                            <img src="/images/hebergements/3_medium/2.jpg" alt="Hotel-du-port">
                         </div>
+                        <!--Description-->
                         <div class="description-place-card">
                             <div class="text-place-card">
                                 <h3>Hôtel du port</h3>
@@ -127,9 +140,11 @@
                     </a>
                     <!--Troisième card : Hôtel les mouettes-->
                     <a href="" class="place-card">
+                        <!--Image-->
                         <div class="image-place-card">
-                            <img src="/images/hebergements/4_small/3.jpg" alt="hotel-les-mouettes">
+                            <img src="/images/hebergements/3_medium/3.jpg" alt="hotel-les-mouettes">
                         </div>
+                        <!--Description-->
                         <div class="description-place-card">
                             <div class="text-place-card">
                                 <h3>Hôtel Les mouettes</h3>
@@ -146,9 +161,11 @@
                     </a>
                     <!--Quatrième card : Hôtel de la mer-->
                     <a href="" class="place-card">
+                        <!--Image-->
                         <div class="image-place-card">
-                            <img src="/images/hebergements/4_small/4.jpg" alt="hotel-de-la-mer">
+                            <img src="/images/hebergements/3_medium/4.jpg" alt="hotel-de-la-mer">
                         </div>
+                        <!--Description-->
                         <div class="description-place-card">
                             <div class="text-place-card">
                                 <h3>Hôtel de la mer</h3>
@@ -161,14 +178,15 @@
                                 <i class="fas fa-star grey-star"></i>
                                 <i class="fas fa-star grey-star"></i>
                             </div>
-                            
                         </div>
                     </a>
                     <!--Cinquième card : Auberge Le Panier-->
                     <a href="" class="place-card">
+                        <!--Image-->
                         <div class="image-place-card">
-                            <img src="/images/hebergements/4_small/5.jpg" alt="auberge-le-panier"> 
+                            <img src="/images/hebergements/3_medium/5.jpg" alt="auberge-le-panier"> 
                         </div>
+                        <!--Description-->
                         <div class="description-place-card">
                             <div class="text-place-card">
                                 <h3>Auberge Le Panier</h3>
@@ -185,9 +203,11 @@
                     </a>
                     <!--Sixième card :  Hôtel ches Amina-->
                     <a href="" class="place-card">
+                        <!--Image-->
                         <div class="image-place-card">
-                            <img src="/images/hebergements/4_small/6.jpg" alt="hotel-chez-amina">
+                            <img src="/images/hebergements/3_medium/6.jpg" alt="hotel-chez-amina">
                         </div>
+                        <!--Description-->
                         <div class="description-place-card">
                             <div class="text-place-card">
                                 <h3>Hôtel chez Amina</h3>
@@ -204,24 +224,29 @@
                     </a>
                 </div>
                 <!-- Lien "Afficher plus"-->
-                <a id="show-more-place-cards" href="">
+                <a href="" id="show-more-place-cards">
                     <h2>Afficher plus</h2>
                 </a>
             </div>
             <!--Section "Les plus populaires"-->
             <div class="most-famous">
+                <!--Titre de la section-->
                 <div class="title-most-famous">
                     <h2> Les plus populaires</h2>
                     <i class="fas fa-chart-line increase"></i>
                 </div>
+                <!--Section comportant les cards-->
                 <div class="most-famous-cards-section">
+                    <!-- Première card: Hôtel Le soleil du matin-->
                     <a href="" class="most-famous-cards">
+                        <!--Image-->
                         <div class="most-famous-cards-img">
-                            <img src="/images/hebergements/4_small/7.jpg" alt="hotel-le-soleil-du-matin">
+                            <img src="/images/hebergements/3_medium/7.jpg" alt="hotel-le-soleil-du-matin">
                         </div>
+                        <!--Description-->
                         <div class="description-most-famous-cards">
                             <div class="text-most-famous-cards">
-                                <h3>Hôtel Le soleil du matin</h3>
+                                <h3 class="title-most-famous-cards">Hôtel Le soleil du matin</h3>
                                 <p>Nuit à partir de 128€</p>
                             </div>
                             <div class="stars-most-famous-cards">
@@ -235,12 +260,14 @@
                     </a>
                     <!-- Deuxième card : Au coeur de l'eau Chambres d'hôtes-->
                     <a href="" class="most-famous-cards">
+                        <!--Image-->
                         <div class="most-famous-cards-img">
-                            <img src="/images/hebergements/4_small/8.jpg" alt="au-coeur-de-leau-chambres-dhotes">
+                            <img src="/images/hebergements/3_medium/8.jpg" alt="au-coeur-de-leau-chambres-dhotes">
                         </div>
+                        <!--Description-->
                         <div class="description-most-famous-cards">
-                            <div class="text-most-famous-cards">
-                                <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                            <div class="text-most-famous-cards" id="text-seconde-card">
+                                <h3 class="title-most-famous-cards">Au coeur de l'eau Chambres d'hôtes</h3>
                                 <p>Nuit à partir de 71€</p>
                             </div>
                             <div class="stars-most-famous-cards">
@@ -254,12 +281,15 @@
                     </a>
                     <!-- Troisième card : Hôtel Tout bleu et Blanc-->
                     <a href="" class="most-famous-cards">
+                        <!--Image-->
                         <div class="most-famous-cards-img">
-                            <img id="without-zoom-img" src="/images/hebergements/4_small/9.jpg" alt="hotel-tout-bleu-et-blanc">
+                            <img id="without-zoom-img" 
+                                src="/images/hebergements/3_medium/9.jpg" alt="hotel-tout-bleu-et-blanc">
                         </div>
+                        <!--Description-->
                         <div class="description-most-famous-cards">
                             <div class="text-most-famous-cards">
-                                <h3>Hôtel Tout bleu et Blanc</h3>
+                                <h3 class="title-most-famous-cards">Hôtel Tout bleu et Blanc</h3>
                                 <p>Nuit à partir de 68€</p>
                             </div>
                             <div class="stars-most-famous-cards">
@@ -279,10 +309,13 @@
         <section class="activities-marseille" id="activities">
             <h2 class="activities-marseille-title">Activités à Marseille</h2>
             <!--Première card : Vieux port-->
-            <a href="" class="activities-card big-card" id="vieux-port">
+            <a href="" class="activities-card" id="vieux-port">
+                <!--Image-->
                 <div class="activities-img">
-                    <img class="img-activity-card" src="/images/activites/1_xlarge/1.jpg" alt="vieux-port">
+                    <img class="img-activity-card"
+                    src="/images/activites/3_medium/1.jpg" alt="vieux-port">
                 </div>
+                <!--Titre de l'activité-->
                 <div class="activities-title">
                     <h3>Vieux port</h3>
                 </div>
@@ -291,48 +324,59 @@
             <div class="activities-column">
                 <!--Deuxième card : Fort de Pomègues-->
                 <a href="" class="activities-card" id="fort-de-pomegues">
+                    <!--Image-->
                     <div class="activities-img">
-                        <img src="/images/activites/1_xlarge/2.jpg" alt="fort-de-pomegues">
+                        <img src="/images/activites/2_large/2.jpg" alt="fort-de-pomegues">
                     </div>
+                    <!--Titre de l'activité-->
                     <div class="activities-title">
                         <h3>Fort de Pomègues</h3>
                     </div>
                 </a>
                 <!--Troisème card : Îles du Frioul-->
                 <a href="" class="activities-card" id="iles-du-frioul">
+                    <!--Image-->
                     <div class="activities-img">
-                        <img src="/images/activites/1_xlarge/3.jpg" alt="iles-du-frioul">
+                        <img src="/images/activites/3_medium/3.jpg" alt="iles-du-frioul">
                     </div>
+                    <!--Titre de l'activité-->
                     <div class="activities-title">
                         <h3>Îles du Frioul</h3>
                     </div>
                 </a> 
             </div>
             <!--Quatrième card : Parc National des Calanques-->
-            <a href="" class="activities-card big-card">
+            <a href="" class="activities-card" id="parc-national-des-calanques">
+                <!--Image-->
                 <div class="activities-img">
-                    <img class="parc-national-des-calanques-img" src="/images/activites/1_xlarge/4.jpg" alt="parc-national-des-calanques">
+                    <img class="parc-national-des-calanques-img" 
+                        src="/images/activites/3_medium/4.jpg" alt="parc-national-des-calanques">
                 </div>
+                <!--Titre de l'activité-->
                 <div class="activities-title">
                     <h3>Parc National des Calanques</h3>
                 </div>
             </a>
             <!--Colonne avec la card 5 et 6 de la section "Activités à Marseille"-->
-            <div class="activities-column">
+            <div class="activities-column seconde-activities-column">
                 <!--Cinquième card : Notre-Dame-de-la-Garde-->
                 <a href="" class="activities-card" id="notre-dame-de-la-garde">
+                    <!--Image-->
                     <div class="activities-img ">
-                        <img src="/images/activites/1_xlarge/5.jpg" alt="notre-dame-de-la-garde">
+                        <img src="/images/activites/3_medium/5.jpg" alt="notre-dame-de-la-garde">
                     </div>
+                    <!--Titre de l'activité-->
                     <div class="activities-title">
                         <h3>Notre-Dame-de-la-Garde</h3>
                     </div>
                 </a>
                 <!--Sixième card : Parc Longchamps-->
                 <a href="" class="activities-card" id="parc-longchamp">
+                    <!--Image-->
                     <div class="activities-img">
-                        <img src="/images/activites/1_xlarge/6.jpg" alt="parc-longchamp">
+                        <img src="/images/activites/3_medium/6.jpg" alt="parc-longchamp">
                     </div>
+                    <!--Titre de l'activité-->
                     <div class="activities-title">
                         <h3>Parc Longchamps</h3>
                     </div>
@@ -343,10 +387,11 @@
     <!--FIN DE LA PARTIE MAIN-->
     <!--PARTIE FOOTER-->
     <footer>
+        <!--Container du footer-->
         <section class="footer-container">
             <!--Section "A propos"-->
             <div class="items-footer">
-                <h2 class="footer-titles">A propos</h2>
+                <h3 class="footer-titles">A propos</h3>
                 <ul>
                     <li><a class="footer-links" href="">Fonctionnement du site</a></li>
                     <li><a class="footer-links" href="">Conditions générales de vente</a></li>
@@ -355,7 +400,7 @@
             </div>
             <!--Section "Nos Hébergements"-->
             <div class="items-footer">
-                <h2 class="footer-titles">Nos Hébergements</h2>
+                <h3 class="footer-titles">Nos Hébergements</h3>
                 <ul>
                     <li><a class="footer-links" href="">Charte qualité</a></li>
                     <li><a class="footer-links" href="">Soumettre votre hôtel</a></li>
@@ -363,7 +408,7 @@
             </div>
             <!--Section "Assistance"-->
             <div class="items-footer" id="assistance-footer">
-                <h2 class="footer-titles">Assistance</h2>
+                <h3 class="footer-titles">Assistance</h3>
                 <ul>
                     <li><a class="footer-links" href="">Centre d'aide</a></li>
                     <li><a class="footer-links" href="mailto:">Nous contacter</a></li>

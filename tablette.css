@@ -1,0 +1,174 @@
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    header, main {
+        max-width: 992px; 
+        margin: 0 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    /*Caractéristiques du texte */
+    .titles {
+        font-size: 40px;
+        width: 95%;
+        line-height: 55px;
+    }
+    
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 23px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 17px;
+    }
+    .fa-star {
+        font-size: 15px;
+    }
+    /*PARTIE HEADER*/
+    
+    #logo {
+        width: 100px;
+    }
+    nav {
+        flex-basis: 60%;
+    }
+    #activities-nav-item:hover::before, #hosting-nav-item::before {
+        top: -52px;
+        transition: 0;
+        }
+    
+    /*PARTIE MAIN*/
+    .button-map {
+        padding: 18px 15px ;    
+    }
+    .text-area {
+        padding: 15px;
+    }
+    .search-button {
+        padding: 18px;
+        font-size: 17px;
+    }
+    /*Section comportant les différents filtres*/
+    .filter-section {
+        width: 80%;
+        flex-wrap: wrap;
+    }
+    .filter {
+        margin-bottom: 20px;
+    }
+    .filter h4 {
+        margin: 0px 15px 0px 5px;
+    }
+    .filter-icon {
+        height: 50px;
+        width: 50px;
+        font-size: 18px;
+    }
+    /*Container de "Hébergements à Marseille" et "Les plus populaires"*/
+    .place-section {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    /*Section "Hébergements à Marseille*/
+    .place-marseille {
+        flex-basis: 100%;
+        height: auto;
+        order: 2;
+        margin-top: 50px;
+    }
+    
+    .section-cards-hosting {
+        height: 85%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .place-card {
+        height: 250px;
+        flex-basis: 45%;
+        margin-bottom: 40px;
+    }
+    .text-place-card {
+        height: 50%;
+    }
+    
+    
+    /*Section "Les plus populaires"*/
+    .most-famous {
+        flex-basis: 100%;
+        order: 1;
+        margin-left: 0;
+    }
+    .most-famous-cards {
+        height: 200px;
+    }
+    
+    /*Section "Activités à Marseille"*/
+    
+    .activities-marseille h3 {
+        font-size: 20px;
+    }
+    .activities-card {
+        flex-basis: 47%;
+        margin-bottom: 40px;
+    }
+    .activities-column {
+        flex-wrap: nowrap;
+        flex-basis: 47%;
+        height: 550px;
+    }
+    #fort-de-pomegues,#iles-du-frioul, 
+    #notre-dame-de-la-garde, #parc-longchamp {
+        flex-basis: 45%;
+        width: 100%;
+    }
+    #notre-dame-de-la-garde, #fort-de-pomegues {
+        margin-right: 25px;
+    }
+    .activities-img {
+        flex: 1;
+    }
+    .activities-title {
+        flex-basis: 85px;
+        text-align: center;
+        padding: 0px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .seconde-activities-column {
+        order: 1;
+    }
+    #parc-national-des-calanques {
+        order: 2;
+    }
+    /*PARTIE FOOTER*/
+    .footer-container {
+        width: 992px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .items-footer {
+        flex-basis: 30%;
+        margin: auto;
+        margin-top: 0;
+    }
+    #assistance-footer {
+        flex-basis: auto;
+    }
+    .footer-titles {
+        font-size: 23px;
+    }
+    .footer-links {
+        font-size: 18px;
+    }
+    
+}
+
+@media screen and (max-width: 850px) {
+    .text-place-card h3 {
+        font-size: 20px;
+    }
+}
