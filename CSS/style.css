@@ -74,49 +74,38 @@ nav {
     text-align: end;
     font-size: 18px;
     font-size-adjust: 0.55;
+    /*Pour retirer l'espace entre les deux <li>*/
+    display: flex;
+    justify-content: end;
 }
 .nav-items {
     display: inline-block;
-    margin-left: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 .a-nav-items {
     position: relative;
-    padding: 0 20px;
+    padding: 0 40px;
 }
 /*Animation section barre de navigation*/ 
 .a-nav-items:hover {
     color: #0065FC;
 }
-
-#hosting-nav-item {
-    color: #0065FC;
-}
-
-#hosting-nav-item::before {
-    content: "";
-    width: 100%;
-    height: 2px;
-    position: absolute;
-    left: 0;
-    top: -62px;
-    background-color: #0065FC;
-}
-
-#activities-nav-item::before {
+.a-nav-items::before {
     color: #0065FC;
     content: "";
     width: 0%;
     height: 0%;
 }
-#activities-nav-item:hover::before {
+.a-nav-items:hover::before {
     width: 100%;
     height: 2px;
     position: absolute;
     background-color: #0065FC;
     left: 0;
     top: -62px;
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 /*FIN PARTIE HEADER*/
@@ -129,6 +118,9 @@ nav {
 }
 
 /*Barre de recherche*/
+.search-bar {
+    display: flex;
+}
 .button-map {
     border: none;
     padding: 22px 18px ;
@@ -136,22 +128,13 @@ nav {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     cursor: pointer;
-    display: inline-block;
     text-align: center;
     background-color: #F2F2F2;
-    line-height: 0;
-    vertical-align: bottom
 }
 
 .text-area {
-    padding: 19px;
+    padding-left: 19px;
     border: 1px solid #F2F2F2;
-    box-sizing:initial;
-    margin: 0;
-    position: relative;
-    right: 6px;
-    vertical-align: bottom;
-    z-index: 1;
 }
 
 .text-area::placeholder {
@@ -162,17 +145,13 @@ nav {
 
 .search-button {
     border: 0px;
-    padding: 20px;
+    padding: 0px 20px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     font-weight: 600;
     background-color: #0065FC;
     color: white;
     cursor: pointer;
-    vertical-align: bottom;
-    position: relative;
-    right: 12px;
-    z-index: 2;
 }
 
 .phone-search-button {
@@ -310,11 +289,17 @@ nav {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);display: flex;
     flex-direction: column;
     transition: box-shadow 500ms;
+    transition: 0.5s ease;
+    
 }
 
 .place-card:hover{
     box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.3);
     transition: box-shadow 500ms;
+    transition: 0.5s ease;
+    transform: scale(1.015);
+    /*pour enlever l'effet de blurr sur le texte
+    à cause du transform scale */
 }
 
 .image-place-card {
@@ -407,11 +392,14 @@ nav {
     display: flex;
     flex-direction: row;
     transition: box-shadow 500ms;
+    transition: 0.5s ease;
 }
 
 .most-famous-cards:hover{
     box-shadow: 10px 5px 20px 0 rgba(0, 0, 0, 0.3);
     transition: box-shadow 500ms;
+    transition: 0.5s ease;
+    transform: scale(1.015);
 }
 
 .most-famous-cards-img {
@@ -475,12 +463,16 @@ nav {
     display: flex;
     flex-direction: column;
     transition: box-shadow 500ms;
+    transition: 0.5s ease;
 }
 
 
 .activities-card:hover{
     box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.3);
     transition: box-shadow 500ms;
+    transition: 0.5s ease;
+    transform: scale(1.015);
+    
 }
 
 .container-img {
