@@ -10,7 +10,7 @@
         max-width: 768px;
     }
     /*Caractéristiques du texte*/ 
-    .titles {
+    .title {
         font-size: 30px;
         width: 95%;
         line-height: 45px;
@@ -51,7 +51,6 @@
     nav {
         flex-basis: 100%;
         margin-bottom: 15px;
-
     }
     .ul-items {
         margin: 0;
@@ -66,16 +65,10 @@
         margin-left: 0;
         flex-basis: 50%;
     }
-    .li-items-hosting {
+    .nav-items{
         border-bottom: 4px solid #F2F2F2;
     }
-    .li-items-hosting:hover {
-        border-bottom: 4px solid #0065FC;
-    }
-    .li-items-activities {
-        border-bottom: 4px solid #F2F2F2;
-    }
-    .li-items-activities:hover  {
+    .nav-items:hover {
         border-bottom: 4px solid #0065FC;
         transition: 0.3s;
     }
@@ -86,7 +79,7 @@
         transition: none;
     }
     #activities-nav-item:hover::before {
-        transition: 0;
+        transition: none;
         width: 0%;
         height: 0%;
     }
@@ -280,7 +273,7 @@
         font-size: 18px;
     }
     /*PARTIE HEADER*/
-    .titles {
+    .title {
         font-size: 26px;
         line-height: 35px;
     }
@@ -313,10 +306,7 @@
         padding-left: 8px;
         flex-basis: 65%;
     }
-    textarea:focus {
-        -moz-appearance:none;
-        outline:0px none transparent;
-    }
+    
     .text-area::placeholder {
         font-size: 18px;
     }

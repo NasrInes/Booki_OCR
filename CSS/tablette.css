@@ -6,7 +6,7 @@
         padding-right: 30px;
     }
     /*Caractéristiques du texte */
-    .titles {
+    .title {
         font-size: 40px;
         width: 95%;
         line-height: 55px;
@@ -37,7 +37,7 @@
     }
     #activities-nav-item:hover::before, #hosting-nav-item::before {
         top: -52px;
-        transition: 0;
+        transition: none;
         }
     
     /*PARTIE MAIN*/
@@ -168,3 +168,5 @@
         font-size: 20px;
     }
 }
+
+
