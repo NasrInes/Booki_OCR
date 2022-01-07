@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
     header, main {
         max-width: 992px; 
         margin: 0 30px;
@@ -35,11 +35,10 @@
     nav {
         flex-basis: 60%;
     }
-    #activities-nav-item:hover::before, #hosting-nav-item::before {
+    .a-nav-items:hover::before {
         top: -52px;
         transition: none;
-        }
-    
+    }
     /*PARTIE MAIN*/
     .button-map {
         padding: 18px 15px ;    

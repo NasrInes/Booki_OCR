@@ -266,15 +266,12 @@ main {
     flex-direction: column;
     transition: box-shadow 500ms;
     transition: 0.5s ease;
-    
 }
 .place-card:hover{
     box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.3);
     transition: box-shadow 500ms;
     transition: 0.5s ease;
     transform: scale(1.015);
-    /*pour enlever l'effet de blurr sur le texte
-    à cause du transform scale */
 }
 
 .image-place-card {
