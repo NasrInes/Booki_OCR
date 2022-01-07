@@ -25,11 +25,11 @@
         <!--Barre de navigation : Hébergement Activités-->
         <nav>
             <ul class="ul-items">
-                <li class="nav-items li-items-hosting">
-                    <a class="a-nav-items" id="hosting-nav-item" href="#hosting">Hébergements</a>
+                <li class="nav-items">
+                    <a class="a-nav-items" href="#hosting">Hébergements</a>
                 </li>
-                <li class="nav-items li-items-activities">
-                    <a class="a-nav-items" id="activities-nav-item" href="#activities">Activités</a>
+                <li class="nav-items">
+                    <a class="a-nav-items" href="#activities">Activités</a>
                 </li>
             </ul>
         </nav>
@@ -38,63 +38,66 @@
     
     <!--PARTIE MAIN-->
     <main>
-        <!--Texte d'introduction-->
-        <div class="text-introduction">
-            <h1 class="title"> Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en pleine nature</p>
-        </div>
-        <!--Barre de recherche / formulaire-->
-        <form class="search-bar" method="POST" action="/">
-            <!--Bouton avec icon map-->
-            <button class="button-map" type="button" >
-                <i class="fas fa-map-marker-alt"></i>
-            </button>
-            <!--Espace recherche avec champs de saisie-->
-            <input class="text-area" type="text" placeholder="Marseille, France">
-            <!--Bouton "rechercher"-->
-            <input class="search-button" type="submit" value="Rechercher">
-            <button class="phone-search-button" type="button" >
-                <i class="fas fa-search"></i> 
-            </button>
-        </form>
-        <!--Section comportant les différents filtres-->
-        <div class="filter-section">
-            <h3 class="filter-title">Filtres</h3>
-            <!--Premier filtre : economique -->
-            <div class="filter filter-eco">
-                <div class="filter-icon">
-                    <i class="fas fa-money-bill-wave icon-filter-section"></i>
-                </div>
-                <h4>Économique</h4>
+        <!--Première grande SECTION-->
+        <section>
+            <!--Texte d'introduction-->
+            <div class="text-introduction">
+                <h1 class="title"> Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
             </div>
-            <!--Deuxième filtre : familial -->
-            <div class="filter">
-                <div class="filter-icon filter-family">
-                    <i class="fas fa-child icon-filter-section"></i>
+            <!--Barre de recherche / formulaire-->
+            <form class="search-bar" method="POST" action="/">
+                <!--Bouton avec icon map-->
+                <button class="button-map" type="button" >
+                    <i class="fas fa-map-marker-alt"></i>
+                </button>
+                <!--Espace recherche avec champs de saisie-->
+                <input class="text-area" type="text" placeholder="Marseille, France">
+                <!--Bouton "rechercher"-->
+                <input class="search-button" type="submit" value="Rechercher">
+                <button class="phone-search-button" type="button" >
+                    <i class="fas fa-search"></i> 
+                </button>
+            </form>
+            <!--partie comportant les différents filtres-->
+            <div class="filter-section">
+                <h3 class="filter-title">Filtres</h3>
+                <!--Premier filtre : economique -->
+                <div class="filter filter-eco">
+                    <div class="filter-icon">
+                        <i class="fas fa-money-bill-wave icon-filter-section"></i>
+                    </div>
+                    <h4>Économique</h4>
                 </div>
-                <h4>Familial</h4>
-            </div>
-            <!--Troisième filtre : romantique -->
-            <div class="filter filter-romantic">
-                <div class="filter-icon">
-                    <i class="fas fa-heart icon-filter-section"></i>
+                <!--Deuxième filtre : familial -->
+                <div class="filter">
+                    <div class="filter-icon filter-family">
+                        <i class="fas fa-child icon-filter-section"></i>
+                    </div>
+                    <h4>Familial</h4>
                 </div>
-                <h4>Romantique</h4>
-            </div>
-            <!--Quatrième filtre : animaux autorisés -->
-            <div class="filter filter-animals">
-                <div class="filter-icon">
-                    <i class="fas fa-dog icon-filter-section"></i>
+                <!--Troisième filtre : romantique -->
+                <div class="filter filter-romantic">
+                    <div class="filter-icon">
+                        <i class="fas fa-heart icon-filter-section"></i>
+                    </div>
+                    <h4>Romantique</h4>
                 </div>
-                <h4>Animaux autorisés</h4>
+                <!--Quatrième filtre : animaux autorisés -->
+                <div class="filter filter-animals">
+                    <div class="filter-icon">
+                        <i class="fas fa-dog icon-filter-section"></i>
+                    </div>
+                    <h4>Animaux autorisés</h4>
+                </div>
             </div>
-        </div>
-        <!--Partie informations sur le nombre des logements disponibles-->
-        <div class="info-text">
-            <i class="fas fa-info"></i>
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
-        </div>
-        <!--Section comportant "Hébergement à Marseille" et "Les Plus Populaires"-->
+            <!--Partie informations sur le nombre des logements disponibles-->
+            <div class="info-text">
+                <i class="fas fa-info"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </section>
+        <!--Deuxième grande SECTION comportant "Hébergement à Marseille" et "Les Plus Populaires"-->
         <section class="place-section">
             <!--Section "Hébergement à Marseille"-->
             <div class="place-marseille" id="hosting">
@@ -106,7 +109,7 @@
                     <a href="#" class="place-card">
                         <!--Image-->
                         <div class="image-place-card">
-                            <img src="images/hebergements/3_medium/1.jpg" alt="auberge-la-cannebiere">
+                            <img src="images/hebergements/4_small/1.jpg" alt="auberge-la-cannebiere">
                         </div>
                         <!--Description-->
                         <div class="description-place-card">
@@ -127,7 +130,7 @@
                     <a href="#" class="place-card">
                         <!--Image-->
                         <div class="image-place-card">
-                            <img src="images/hebergements/3_medium/2.jpg" alt="Hotel-du-port">
+                            <img src="images/hebergements/4_small/2.jpg" alt="Hotel-du-port">
                         </div>
                         <!--Description-->
                         <div class="description-place-card">
@@ -149,7 +152,7 @@
                     <a href="#" class="place-card">
                         <!--Image-->
                         <div class="image-place-card">
-                            <img src="images/hebergements/3_medium/3.jpg" alt="hotel-les-mouettes">
+                            <img src="images/hebergements/4_small/3.jpg" alt="hotel-les-mouettes">
                         </div>
                         <!--Description-->
                         <div class="description-place-card">
@@ -170,7 +173,7 @@
                     <a href="#" class="place-card">
                         <!--Image-->
                         <div class="image-place-card">
-                            <img src="images/hebergements/3_medium/4.jpg" alt="hotel-de-la-mer">
+                            <img src="images/hebergements/4_small/4.jpg" alt="hotel-de-la-mer">
                         </div>
                         <!--Description-->
                         <div class="description-place-card">
@@ -191,7 +194,7 @@
                     <a href="#" class="place-card">
                         <!--Image-->
                         <div class="image-place-card">
-                            <img src="images/hebergements/3_medium/5.jpg" alt="auberge-le-panier"> 
+                            <img src="images/hebergements/4_small/5.jpg" alt="auberge-le-panier"> 
                         </div>
                         <!--Description-->
                         <div class="description-place-card">
@@ -212,7 +215,7 @@
                     <a href="#" class="place-card">
                         <!--Image-->
                         <div class="image-place-card">
-                            <img src="images/hebergements/3_medium/6.jpg" alt="hotel-chez-amina">
+                            <img src="images/hebergements/4_small/6.jpg" alt="hotel-chez-amina">
                         </div>
                         <!--Description-->
                         <div class="description-place-card">
@@ -248,7 +251,7 @@
                     <a href="#" class="most-famous-cards">
                         <!--Image-->
                         <div class="most-famous-cards-img">
-                            <img src="images/hebergements/3_medium/7.jpg" alt="hotel-le-soleil-du-matin">
+                            <img src="images/hebergements/4_small/7.jpg" alt="hotel-le-soleil-du-matin">
                         </div>
                         <!--Description-->
                         <div class="description-most-famous-cards">
@@ -269,7 +272,7 @@
                     <a href="#" class="most-famous-cards">
                         <!--Image-->
                         <div class="most-famous-cards-img">
-                            <img src="images/hebergements/3_medium/8.jpg" alt="au-coeur-de-leau-chambres-dhotes">
+                            <img src="images/hebergements/4_small/8.jpg" alt="au-coeur-de-leau-chambres-dhotes">
                         </div>
                         <!--Description-->
                         <div class="description-most-famous-cards">
@@ -290,7 +293,7 @@
                     <a href="#" class="most-famous-cards">
                         <!--Image-->
                         <div class="most-famous-cards-img">
-                            <img src="images/hebergements/3_medium/9.jpg" alt="hotel-tout-bleu-et-blanc">
+                            <img src="images/hebergements/4_small/9.jpg" alt="hotel-tout-bleu-et-blanc">
                         </div>
                         <!--Description-->
                         <div class="description-most-famous-cards">
@@ -311,7 +314,7 @@
                 </div>
             </div>
         </section>
-        <!--Section "Activités à Marseille"-->
+        <!--Troisième grande SECTION "Activités à Marseille"-->
         <section class="activities-marseille" id="activities">
             <h2 class="activities-marseille-title">Activités à Marseille</h2>
             <!--Première card : Vieux port-->
@@ -319,7 +322,7 @@
                 <!--Image-->
                 <div class="activities-img">
                     <img class="activities-img"
-                    src="images/activites/3_medium/1.jpg" alt="vieux-port">
+                    src="images/activites/4_small/1.jpg" alt="vieux-port">
                 </div>
                 <!--Titre de l'activité-->
                 <div class="activities-title">
@@ -332,7 +335,7 @@
                 <a href="#" class="activities-card" id="fort-de-pomegues">
                     <!--Image-->
                     <div class="activities-img">
-                        <img src="images/activites/2_large/2.jpg" alt="fort-de-pomegues">
+                        <img src="images/activites/3_medium/2.jpg" alt="fort-de-pomegues">
                     </div>
                     <!--Titre de l'activité-->
                     <div class="activities-title">
@@ -343,7 +346,7 @@
                 <a href="#" class="activities-card" id="iles-du-frioul">
                     <!--Image-->
                     <div class="activities-img">
-                        <img src="images/activites/3_medium/3.jpg" alt="iles-du-frioul">
+                        <img src="images/activites/4_small/3.jpg" alt="iles-du-frioul">
                     </div>
                     <!--Titre de l'activité-->
                     <div class="activities-title">
@@ -356,7 +359,7 @@
                 <!--Image-->
                 <div class="activities-img">
                     <img class="parc-national-des-calanques-img" 
-                        src="images/activites/3_medium/4.jpg" alt="parc-national-des-calanques">
+                        src="images/activites/4_small/4.jpg" alt="parc-national-des-calanques">
                 </div>
                 <!--Titre de l'activité-->
                 <div class="activities-title">
@@ -369,7 +372,7 @@
                 <a href="#" class="activities-card" id="notre-dame-de-la-garde">
                     <!--Image-->
                     <div class="activities-img ">
-                        <img src="images/activites/3_medium/5.jpg" alt="notre-dame-de-la-garde">
+                        <img src="images/activites/4_small/5.jpg" alt="notre-dame-de-la-garde">
                     </div>
                     <!--Titre de l'activité-->
                     <div class="activities-title">
@@ -380,7 +383,7 @@
                 <a href="#" class="activities-card" id="parc-longchamp">
                     <!--Image-->
                     <div class="activities-img">
-                        <img src="images/activites/3_medium/6.jpg" alt="parc-longchamp">
+                        <img src="images/activites/4_small/6.jpg" alt="parc-longchamp">
                     </div>
                     <!--Titre de l'activité-->
                     <div class="activities-title">
